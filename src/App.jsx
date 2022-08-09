@@ -7,7 +7,8 @@ export default function App() {
     
 
 
-    async function drawCanvas(cv_height = (window.innerHeight * 0.85)) {
+    async function drawCanvas(cv_height = 823) {
+
 
         return new Promise(async (resolve, reject) => {
             
@@ -134,7 +135,7 @@ export default function App() {
             let nameinput = document.getElementById('name_input')
             let priceinput = document.getElementById('price_input')
 
-            console.log('clicou')
+
 
             poster_properties.name = nameinput.innerText.toUpperCase()
             poster_properties.cost = priceinput.innerText
